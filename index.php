@@ -50,7 +50,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Kontak</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="login.html">Masuk</a>
+                <a class="nav-link js-scroll-trigger" href="indexlogin.html">Masuk</a>
           </ul>
         </div>
       </div>
