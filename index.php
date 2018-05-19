@@ -116,8 +116,8 @@
         </div>
         <div class="row">
             <?php ?>
-
-            <div class="col-md-4 col-sm-6 portfolio-item">
+            
+			<div class="col-md-4 col-sm-6 portfolio-item">
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
@@ -201,8 +201,17 @@
               <p class="text-muted">Event budaya yang diselenggarakan Fakultas Ekonomi dan Manajemen IPB</p>
             </div>
           </div>
-        </div>
-      </div>
+         </div>
+            <div class="center portfolio-item" align=center>
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="http://www.math.ui.ac.id/wp-content/uploads/2017/10/daftarsci.png" alt="">
+              </a>
+            </div>		 
     </section>
 
     <!-- Tempat -->
@@ -372,7 +381,7 @@
 
     <!-- Portfolio Modals -->
 
-    <!-- Modal 1 -->
+	<!-- Modal 1 -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -568,6 +577,31 @@
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+				  <button class="btn btn-primary" onclick="window.location.href='Agrievent.html'">
+                    <i class="fa fa-registered"></i>
+                    Daftar di sini</button>		
                 </div>
               </div>
             </div>
