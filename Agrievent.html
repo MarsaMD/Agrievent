@@ -9,7 +9,7 @@
 <link rel="canonical" href="https://form.jotform.me/81384372272458" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <meta name="HandheldFriendly" content="true" />
-<title>Agrievent</title>
+<title>Form</title>
 <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.6157" rel="stylesheet" type="text/css" />
 <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.6157" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.6157" />
@@ -28,7 +28,7 @@
     body, html{
         margin:0;
         padding:0;
-        background:#fec810;
+        background:#fac102;
     }
 
     .form-all{
@@ -74,7 +74,13 @@
       font-family: Lucida Grande, sans-serif;
     }
   
-    
+    .form-label.form-label-auto {
+      
+    display: inline-block;
+    float: left;
+    text-align: left;
+  
+    }
   
     .form-line {
       margin-top: 12px 36px 12px 36px px;
@@ -108,7 +114,7 @@
     }
   
     .supernova .form-all, .form-all {
-      background-color: #fec810;
+      background-color: #fac102;
       border: 1px solid transparent;
     }
   
@@ -149,13 +155,19 @@
       background-color: #fff;
     }
   
-    .supernova {
-      background-image: none;
-    }
-    #stage {
-      background-image: none;
-    }
-  
+      .supernova {
+        height: 100%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: center top;
+      }
+      .supernova {
+        background-image: url("https://www.jotform.com/uploads/gudanggelo/form_files/header-bg.5b024bd3e5c3d8.57510049.jpg");
+      }
+      #stage {
+        background-image: url("https://www.jotform.com/uploads/gudanggelo/form_files/header-bg.5b024bd3e5c3d8.57510049.jpg");
+      }
+    
     .form-all {
       background-image: none;
     }
@@ -181,20 +193,19 @@
 <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.6157" type="text/javascript"></script>
 <script type="text/javascript">
    JotForm.init(function(){
-      setTimeout(function() {
-          $('input_30').hint('ex: myname@example.com');
-       }, 20);
-      JotForm.setPhoneMaskingValidator( 'input_31_full', '+62###-####-####' );
+      JotForm.setPhoneMaskingValidator( 'input_31_full', '62###-####-####' );
 
  JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
  JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
  JotForm.calendarOther = {"today":"Today"};
  var languageOptions = document.querySelectorAll('#langList li'); 
  for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
-   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("35", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":false,"custom":false,"ranges":false,"start":"2018-05-26","end":"2018-05-31"}); }, 0); });
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("35", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"1990-01-01","end":"May 25, 2100"}); }, 0); });
  } 
- JotForm.setCalendar("35", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":false,"custom":false,"ranges":false,"start":"2018-05-26","end":"2018-05-31"});
- JotForm.formatDate({date:(new Date()), dateField:$("id_"+35)});
+ JotForm.setCalendar("35", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"1990-01-01","end":"May 25, 2100"});
+      setTimeout(function() {
+          $('input_34').hint('Ex: 100');
+       }, 20);
       JotForm.description('input_38', 'Silahkan upload gambar poster mu');
 	JotForm.clearFieldOnHide="disable";
       setTimeout(function() {
@@ -203,9 +214,9 @@
     /*INIT-END*/
 });
 
-   JotForm.prepareCalculationsOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"namaPj","qid":"15","text":"Nama PJ","type":"control_fullname"},null,null,null,{"description":"","name":"namaEvent","qid":"19","subLabel":"Nama Event Ex: MPKMB 53","text":"Nama Event","type":"control_textbox"},null,null,null,null,null,null,{"name":"submitForm","qid":"26","text":"Register","type":"control_button"},null,null,{"name":"formRegistrasi","qid":"29","text":"Form Registrasi Event","type":"control_head"},{"description":"","name":"email","qid":"30","subLabel":"Contoh Hahaha@hahaha.com","text":"E-mail ","type":"control_email"},{"description":"","name":"nomorTelepon","qid":"31","text":"Nomor Telepon","type":"control_phone"},null,{"description":"","name":"deskripsiEvent","qid":"33","subLabel":"","text":"Deskripsi Event Kamu !","type":"control_textarea"},{"description":"","name":"jumlahTiket","qid":"34","subLabel":"contoh : 100","text":"Jumlah Tiket yang tersedia ","type":"control_number"},{"description":"","name":"tanggalAcara","qid":"35","text":"Tanggal Acara","type":"control_datetime"},null,null,{"description":"Silahkan upload gambar poster mu","name":"input38","qid":"38","subLabel":"","text":"Poster","type":"control_fileupload"}]);
+   JotForm.prepareCalculationsOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"namaPj","qid":"15","text":"Nama PJ","type":"control_fullname"},null,null,null,{"description":"","name":"namaEvent","qid":"19","subLabel":"Nama Event Ex: MPKMB 53","text":"Nama Event","type":"control_textbox"},null,null,null,null,null,null,{"name":"submitForm","qid":"26","text":"Submit !","type":"control_button"},null,null,{"name":"formRegistrasi","qid":"29","text":"Form Registrasi Event","type":"control_head"},{"description":"","name":"email","qid":"30","subLabel":"Contoh Hahaha@hahaha.com","text":"E-mail ","type":"control_email"},{"description":"","name":"nomorTelepon","qid":"31","text":"Nomor Telepon","type":"control_phone"},null,{"description":"","name":"deskripsiEvent","qid":"33","subLabel":"","text":"Deskripsi Event Kamu !","type":"control_textarea"},{"description":"","name":"jumlahTiket","qid":"34","subLabel":"kosongkan jika tidak ada","text":"Jumlah Tiket yang tersedia ","type":"control_number"},{"description":"","name":"tanggalAcara","qid":"35","text":"Tanggal Acara","type":"control_datetime"},null,null,{"description":"Silahkan upload gambar poster mu","name":"input38","qid":"38","subLabel":"","text":"Poster","type":"control_fileupload"}]);
    setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"namaPj","qid":"15","text":"Nama PJ","type":"control_fullname"},null,null,null,{"description":"","name":"namaEvent","qid":"19","subLabel":"Nama Event Ex: MPKMB 53","text":"Nama Event","type":"control_textbox"},null,null,null,null,null,null,{"name":"submitForm","qid":"26","text":"Register","type":"control_button"},null,null,{"name":"formRegistrasi","qid":"29","text":"Form Registrasi Event","type":"control_head"},{"description":"","name":"email","qid":"30","subLabel":"Contoh Hahaha@hahaha.com","text":"E-mail ","type":"control_email"},{"description":"","name":"nomorTelepon","qid":"31","text":"Nomor Telepon","type":"control_phone"},null,{"description":"","name":"deskripsiEvent","qid":"33","subLabel":"","text":"Deskripsi Event Kamu !","type":"control_textarea"},{"description":"","name":"jumlahTiket","qid":"34","subLabel":"contoh : 100","text":"Jumlah Tiket yang tersedia ","type":"control_number"},{"description":"","name":"tanggalAcara","qid":"35","text":"Tanggal Acara","type":"control_datetime"},null,null,{"description":"Silahkan upload gambar poster mu","name":"input38","qid":"38","subLabel":"","text":"Poster","type":"control_fileupload"}]);}, 20); 
+JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"namaPj","qid":"15","text":"Nama PJ","type":"control_fullname"},null,null,null,{"description":"","name":"namaEvent","qid":"19","subLabel":"Nama Event Ex: MPKMB 53","text":"Nama Event","type":"control_textbox"},null,null,null,null,null,null,{"name":"submitForm","qid":"26","text":"Submit !","type":"control_button"},null,null,{"name":"formRegistrasi","qid":"29","text":"Form Registrasi Event","type":"control_head"},{"description":"","name":"email","qid":"30","subLabel":"Contoh Hahaha@hahaha.com","text":"E-mail ","type":"control_email"},{"description":"","name":"nomorTelepon","qid":"31","text":"Nomor Telepon","type":"control_phone"},null,{"description":"","name":"deskripsiEvent","qid":"33","subLabel":"","text":"Deskripsi Event Kamu !","type":"control_textarea"},{"description":"","name":"jumlahTiket","qid":"34","subLabel":"kosongkan jika tidak ada","text":"Jumlah Tiket yang tersedia ","type":"control_number"},{"description":"","name":"tanggalAcara","qid":"35","text":"Tanggal Acara","type":"control_datetime"},null,null,{"description":"Silahkan upload gambar poster mu","name":"input38","qid":"38","subLabel":"","text":"Poster","type":"control_fileupload"}]);}, 20); 
 </script>
 </head>
 <body>
@@ -215,7 +226,7 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
     <ul class="form-section page-section">
       <li id="cid_29" class="form-input-wide" data-type="control_head">
         <div class="form-header-group ">
-          <div class="header-text httal htvam">
+          <div class="header-text httac htvam">
             <h2 id="header_29" class="form-header" data-component="header">
               Form Registrasi Event
             </h2>
@@ -265,7 +276,7 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
         </label>
         <div id="cid_30" class="form-input jf-required">
           <span class="form-sub-label-container" style="vertical-align:top">
-            <input type="email" id="input_30" name="q30_email" class="form-textbox validate[required, Email, disallowFree]" size="32" value="" placeholder="ex: myname@example.com" data-component="email" required="" />
+            <input type="email" id="input_30" name="q30_email" class="form-textbox validate[required, Email, disallowFree]" size="32" value="" data-component="email" required="" />
             <label class="form-sub-label" for="input_30" style="min-height:13px"> Contoh Hahaha@hahaha.com </label>
           </span>
         </div>
@@ -306,30 +317,30 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
           <div data-wrapper-react="true">
             <div style="display:none">
               <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="currentDate form-textbox validate[required, limitDate]" id="day_35" name="q35_tanggalAcara[day]" size="2" data-maxlength="2" value="19" required="" />
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="day_35" name="q35_tanggalAcara[day]" size="2" data-maxlength="2" value="" required="" />
                 <span class="date-separate">
                    -
                 </span>
                 <label class="form-sub-label" for="day_35" id="sublabel_day" style="min-height:13px"> Day </label>
               </span>
               <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[required, limitDate]" id="month_35" name="q35_tanggalAcara[month]" size="2" data-maxlength="2" value="05" required="" />
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="month_35" name="q35_tanggalAcara[month]" size="2" data-maxlength="2" value="" required="" />
                 <span class="date-separate">
                    -
                 </span>
                 <label class="form-sub-label" for="month_35" id="sublabel_month" style="min-height:13px"> Month </label>
               </span>
               <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[required, limitDate]" id="year_35" name="q35_tanggalAcara[year]" size="4" data-maxlength="4" value="2018" required="" />
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="year_35" name="q35_tanggalAcara[year]" size="4" data-maxlength="4" value="" required="" />
                 <label class="form-sub-label" for="year_35" id="sublabel_year" style="min-height:13px"> Year </label>
               </span>
             </div>
             <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="text" class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_35" size="12" data-maxlength="12" data-age="" value="19-05-2018" required="" data-format="ddmmyyyy" data-seperator="-" placeholder="dd-mm-yyyy" />
+              <input type="text" class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_35" size="12" data-maxlength="12" data-age="" value="" required="" data-format="ddmmyyyy" data-seperator="-" placeholder="dd-mm-yyyy" />
               <label class="form-sub-label" for="lite_mode_35" id="sublabel_litemode" style="min-height:13px"> tanggal-bulan-tahun </label>
             </span>
             <span class="form-sub-label-container" style="vertical-align:top">
-              <img alt="Pick a Date" id="input_35_pick" src="https://cdn.jotfor.ms/images/calendar.png" style="vertical-align:middle" data-component="datetime" />
+              <img class="showAutoCalendar" alt="Pick a Date" id="input_35_pick" src="https://cdn.jotfor.ms/images/calendar.png" style="vertical-align:middle" data-component="datetime" />
               <label class="form-sub-label" for="input_35_pick" style="min-height:13px">  </label>
             </span>
           </div>
@@ -339,8 +350,8 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
         <label class="form-label form-label-left form-label-auto" id="label_34" for="input_34"> Jumlah Tiket yang tersedia </label>
         <div id="cid_34" class="form-input">
           <span class="form-sub-label-container" style="vertical-align:top">
-            <input type="number" id="input_34" name="q34_jumlahTiket" data-type="input-number" class=" form-number-input form-textbox" style="width:60px" size="5" value="" data-component="number" />
-            <label class="form-sub-label" for="input_34" style="min-height:13px"> contoh : 100 </label>
+            <input type="number" id="input_34" name="q34_jumlahTiket" data-type="input-number" class=" form-number-input form-textbox" style="width:60px" size="5" value="" placeholder="Ex: 100" data-component="number" />
+            <label class="form-sub-label" for="input_34" style="min-height:13px"> kosongkan jika tidak ada </label>
           </span>
         </div>
       </li>
@@ -372,7 +383,7 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
         <div id="cid_26" class="form-input-wide">
           <div style="text-align:center" class="form-buttons-wrapper">
             <button id="input_26" type="submit" class="form-submit-button form-submit-button-simple_yellow" data-component="button">
-              Register
+              Submit !
             </button>
           </div>
         </div>
@@ -392,7 +403,6 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
   </script>
   <div class="formFooter-heightMask">
   </div>
- 
 </form></body>
 </html>
 <script type="text/javascript">JotForm.ownerView=true;</script>
