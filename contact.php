@@ -6,7 +6,7 @@
     $phone = $_POST['phone'];
     $message = $_POST['message'];
 
-    $query = mysqli_query($connect, "INSERT INTO contact (id, name,email,phone,message) VALUE ('','$nama','$email','$phone','$message')");
+    $query = mysqli_query($connect, "INSERT INTO contact (id,name,email,phone,message) VALUES ('','$nama','$email','$phone','$message')");
     if($query){
     	header('Location: index.php#contact');
     	// echo "berhasil";
@@ -16,7 +16,7 @@
     }
   }
   else{
-  	echo "masukin data coy"; 	
+  	echo "masukin data coy";
   }
-    
+
 ?>
