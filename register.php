@@ -11,7 +11,8 @@ include 'db-connect.php';
        $pswd1 = md5($Password);
        $pswd2 = md5($Password2);
 
-
+       $pswd1 = hash('md5', $Password);
+       $pswd2 = hash('md5', $Password2);
 
        if ($pswd2==$pswd1) {
 //proses simpan data, $_POST['pw'] dan $_POST['pw1'] adalah name dari masing masing text password

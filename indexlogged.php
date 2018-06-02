@@ -19,7 +19,6 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
 
@@ -50,7 +49,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Kontak</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="indexlogin.html">Masuk</a>
+                <a class="nav-link js-scroll-trigger" href="index.html">Keluar</a>
           </ul>
         </div>
       </div>
@@ -62,7 +61,7 @@
         <div class="intro-text">
           <div class="intro-lead-in">Selamat Datang </div>
           <div class="intro-heading text-uppercase">Cari acara yang kamu mau</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Telusuri</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="Agrievent.html">Daftarkan sekarang</a>
         </div>
       </div>
     </header>
@@ -202,7 +201,17 @@
             </div>
           </div>
          </div>
-       </section>
+            <div class="center portfolio-item" align=center>
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="http://www.math.ui.ac.id/wp-content/uploads/2017/10/daftarsci.png" alt="">
+              </a>
+            </div>
+    </section>
 
     <!-- Tempat -->
     <section id="about">
@@ -251,6 +260,7 @@
                   <div class="timeline-heading">
                     <h4>Auditorium</h4>
                     <h4 class="subheading"></h4>
+                    <p>Di IPB sendiri banyak sekali auditorium yang bisa digunakan untuk acara-acara seperti seminar dan talkshow kamu bisa menghubungi bapak syamsul di nomor telpon : 08998376464 untuk reservasi</p>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted"></p>
@@ -264,7 +274,7 @@
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h4>Auditorium Andi Hakim Nasution</h4>
-                    <h4 class="subheading">Auditorium ini terletak di Gedung Andi Hakim Nasution. Auditorium ini sering dipakai untuk acara-acara resmi IPB seperti pelantikan rektor dan pejabat IPb, ataupun acara dari Direktorat Kemahasiswaan IPB.</h4>
+                    <p>Auditorium ini terletak di Gedung Andi Hakim Nasution. Auditorium ini sering dipakai untuk acara-acara resmi IPB seperti pelantikan rektor dan pejabat IPB, ataupun acara dari Direktorat Kemahasiswaan IPB.</p>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted"></p>
@@ -295,9 +305,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form  action="contact.php" method="post" enctype= "multipart/form-data">
-              <input class="form-control" type="hidden" id="id" name= "id">
-              <p class="help-block text-danger"></p>
+            <form  action="contact.php" method= "post" enctype= "multipart/form-data" novalidate>
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -305,17 +313,17 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="e-mail *" required data-validation-required-message="Mohon masukkan alamat e-mail anda." name="email">
+                    <input class="form-control" id="email" type="email" placeholder="e-mail *" required data-validation-required-message="Mohon masukkan alamat e-mail anda." name= "email">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Nomor HP *" required data-validation-required-message="Mohon masukkan nomor telepon anda." name="phone">
+                    <input class="form-control" id="phone" type="tel" placeholder="Nomor HP *" required data-validation-required-message="Mohon masukkan nomor telepon anda."name= "phone">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Pesan *" required data-validation-required-message="Mohon masukkan pesan anda." name="message"></textarea>
+                    <textarea class="form-control" id="message" placeholder="Pesan *" required data-validation-required-message="Mohon masukkan pesan anda."name= "message"></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -582,7 +590,30 @@
       </div>
     </div>
 
-
+    <!-- Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+				  <button class="btn btn-primary" onclick="window.location.href='Agrievent.html'">
+                    <i class="fa fa-registered"></i>
+                    Daftar di sini</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
