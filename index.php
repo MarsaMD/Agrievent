@@ -251,6 +251,7 @@
                   <div class="timeline-heading">
                     <h4>Auditorium</h4>
                     <h4 class="subheading"></h4>
+                    <p>Di IPB sendiri banyak sekali auditorium yang bisa digunakan untuk acara-acara seperti seminar dan talkshow kamu bisa menghubungi bapak syamsul di nomor telpon : 08998376464 untuk reservasi</p>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted"></p>
@@ -264,7 +265,7 @@
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h4>Auditorium Andi Hakim Nasution</h4>
-                    <h4 class="subheading">Auditorium ini terletak di Gedung Andi Hakim Nasution. Auditorium ini sering dipakai untuk acara-acara resmi IPB seperti pelantikan rektor dan pejabat IPb, ataupun acara dari Direktorat Kemahasiswaan IPB.</h4>
+                    <p>Auditorium ini terletak di Gedung Andi Hakim Nasution. Auditorium ini sering dipakai untuk acara-acara resmi IPB seperti pelantikan rektor dan pejabat IPB, ataupun acara dari Direktorat Kemahasiswaan IPB.</p>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted"></p>
