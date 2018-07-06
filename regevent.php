@@ -2,15 +2,16 @@
 include 'db-connect.php';
  if(isset($_POST['q30_email']))
  {
-       $FirstName = $_POST['q15_namaPj[first]'];
-       $LastName = $_POST['q15_namaPj[last]'];
+      var_dump($_POST);
+        $FirstName = $_POST['q15_namaPj']['first'];
+       $LastName = $_POST['q15_namaPj']['last'];
        $EventName = $_POST['q19_namaEvent'];
        $Email = $_POST['q30_email'];
        $Phone = $_POST['q31_nomorTelepon[full]'];
        $EventDesc = $_POST['q33_deskripsiEvent'];
-       $DayDate = $_POST['q35_tanggalAcara[day]'];
-       $MonthDate = $_POST['q35_tanggalAcara[month]'];
-       $YearDate  = $_POST['q35_tanggalAcara[year]'];
+       $DayDate = $_POST['q35_tanggalAcara']['day'];
+       $MonthDate = $_POST['q35_tanggalAcara']['month'];
+       $YearDate  = $_POST['q35_tanggalAcara']['year'];
        $Ticket = $_POST['q34_jumlahTiket'];
 
             $in = mysqli_query($connect,"INSERT INTO regevent(FirstName,LastName,EventName,Email,Phone,EventDesc,DayDate,MonthDate,YearDate,
