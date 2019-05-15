@@ -1,9 +1,3 @@
-[Kelompok 7_Agrievent]
-1. Taufik Hidayat – G64160027
-2. Marsa Muhamad Daffa – G64160040
-3. Zevano Yaumalvasti – G64160075
-4. M. Farid Marzuq – G64160078
-
 Deskripsi Sistem :
 Aplikasi ini untuk memberikan keuntungan penyelenggara event internal kampus IPB terkait
 promosi dan publikasi event, dan memudahkan penyelenggara dalam menyewa ruangan
